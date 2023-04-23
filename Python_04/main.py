@@ -53,7 +53,7 @@ def info(inf_req):
         for k, v in log[i].items():
             if k == inf_req:
                 os.system('cls') 
-                print(k, ':', '\nSex - ', v[0], '\nHeight - ', v[1], '\nWeight - ', v[2])
+                print(k, ':', 'Sex - ', v[0], 'Height - ', v[1], 'Weight - ', v[2])
                 BMI = round((v[2]/(v[1]**2))*10000, 2)
                 print('BMI - ', BMI)
                 if BMI > 60 or BMI < 10:
@@ -131,7 +131,7 @@ def delete(sp, del_item):
 
 while True:
     os.system('cls')
-    m_comand = input('List/Info/Change/Delete/Add/Exit\n')
+    m_comand = input('List/Info/Change/Delete/Add/Exit')
     if m_comand == 'list':
         os.system('cls')
         log_sp(sp)
