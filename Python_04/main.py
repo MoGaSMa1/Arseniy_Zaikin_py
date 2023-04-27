@@ -2,7 +2,7 @@ import os
 import json
 from time import sleep
 
-data = open("Arseniy_Zaikin_py/Python_04/data.json", "r")
+data = open("Python_04/data.json", "r")
 sp = json.loads(data.read())
 data.close()
     
